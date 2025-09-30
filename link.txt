@@ -1,0 +1,11 @@
+Vídeo de apoio:
+https://www.youtube.com/watch?v=bs2oHg0J44Y&list=PLIcODRghLv6fkUzKkoI8xnm2hkO26n5x5
+
+Site de apoio
+https://ar-js-org.github.io/AR.js-Docs/
+
+Site de apoio2
+http://ar-js-org.github.io/AR.js-Docs/image-tracking/
+
+Criar marcador nft (lembre-se, imagens maiores que 1000px demoram muito para serem criadas)
+https://carnaux.github.io/NFT-Marker-Creator/#/
