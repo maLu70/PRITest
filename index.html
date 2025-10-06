@@ -4,8 +4,8 @@
 <script src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js'></script>
 
 <script>
-    
-    window.onload = function() {
+
+    window.onload = function () {
         AFRAME.registerComponent('videohandler', {
             init: function () {
                 var marker = this.el;
@@ -16,10 +16,10 @@
                     this.vid.play();
                 }.bind(this));
 
-		marker.addEventListener('markerLost', function() {
-			this.vid.pause();
-			this.vid.currentTime = 0;
-		}.bind(this));
+                marker.addEventListener('markerLost', function () {
+                    this.vid.pause();
+                    this.vid.currentTime = 0;
+                }.bind(this));
             }
         });
     };
@@ -50,44 +50,26 @@
     <div class="arjs-loader">
         <div>Carregando</div>
     </div>
-    <a-scene
-        vr-mode-ui="enabled: false;"
-        renderer='antialias: true; alpha: true; precision: medium;'
-        embedded 
-            arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
+    <a-scene vr-mode-ui="enabled: false;" renderer='antialias: true; alpha: true; precision: medium;' embedded
+        arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
 
         <a-assets>
-            <video src="https://raw.githubusercontent.com/maLu70/PRITest/refs/heads/main/assets/mov_bbb.mp4"
-                preload="auto" 
-                id="vid" 
-                response-type="arraybuffer" 
-                loop
-                crossorigin 
-                webkit-playsinline 
-                autoplay 
-                muted 
+            <video src="https://raw.githubusercontent.com/maLu70/PRITest/refs/heads/main/assets/model.gltf"
+                preload="auto" id="vid" response-type="arraybuffer" loop crossorigin webkit-playsinline autoplay muted
                 playsinline>
             </video>
         </a-assets>
 
-        <a-nft
-            videohandler
-            type='nft' 
-            url='https://raw.githubusercontent.com/maLu70/PRITest/refs/heads/main/imgs/Capturar'
-            smooth="true" 
-            smoothcount="10" 
-            smoothtolerance="0.01" 
-            smooththreshold="5"
-        >
-            <a-video
-                src="#vid"
-                position='50 150 -100'
-                rotation='-90 0 0'
-                width='300'
-                height='175'
-                >
-            </a-video>
+        <a-nft videohandler type='nft'
+            url='https://raw.githubusercontent.com/maLu70/PRITest/refs/heads/main/imgs/Capturar' smooth="true"
+            smoothcount="10" smoothtolerance="0.01" smooththreshold="5">
+            <a-entity
+            gltf-model="#vid"
+            scale="0.5 0.5 0.5"
+            position="0 0 0"
+            rotation="1 1 1">
+            </a-entity>
         </a-nft>
-		<a-entity camera></a-entity>
-	</a-scene>
+        <a-entity camera></a-entity>
+    </a-scene>
 </body>
