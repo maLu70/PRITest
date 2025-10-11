@@ -22,17 +22,18 @@
   }
 </style>
 
-<body style="margin : 0px; overflow: hidden;">
-
+<body style="margin: 0px; overflow: hidden;">
   <div class="arjs-loader">
     <div>Loading, please wait...</div>
   </div>
+
   <a-scene
-    vr-mode-ui="enabled: false;"
-    renderer="logarithmicDepthBuffer: true;"
+    vr-mode-ui="enabled: false"
+    renderer="logarithmicDepthBuffer: true"
     embedded
-    arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
+    arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
   >
+
     <a-nft
       type="nft"
       url="https://raw.githubusercontent.com/maLu70/PRITest/refs/heads/main/imgs/Capturar"
@@ -45,10 +46,10 @@
         gltf-model="https://raw.githubusercontent.com/maLu70/PRITest/refs/heads/main/assets/model.gltf"
         scale="250 250 250"
         position="0 0 0"
-      >
+      ></a-entity>
+    </a-nft>
 
-       <a-nft
-       id=""
+    <a-nft
       type="nft"
       url="https://raw.githubusercontent.com/maLu70/PRITest/refs/heads/main/imgs/llama"
       smooth="true"
@@ -60,9 +61,10 @@
         gltf-model="https://raw.githubusercontent.com/maLu70/PRITest/refs/heads/main/assets/scene.gltf"
         scale="250 250 250"
         position="0 0 0"
-      >
-      </a-entity>
+      ></a-entity>
     </a-nft>
+
     <a-entity camera></a-entity>
+
   </a-scene>
 </body>
