@@ -3,86 +3,93 @@
     {
       "bufferView": 2,
       "componentType": 5126,
-      "count": 20537,
+      "count": 53493,
       "max": [
-        0.2756359875202179,
-        0.9490090012550354,
-        1.7470060586929321
+        3.6201150417327881,
+        3.8259251117706299,
+        3.0531389713287354
       ],
       "min": [
-        -0.27578699588775635,
-        -0.9484530091285706,
-        0.0
+        -4.7470598220825195,
+        -1.739577054977417,
+        -3.8521490097045898
       ],
       "type": "VEC3"
     },
     {
       "bufferView": 2,
-      "byteOffset": 246444,
+      "byteOffset": 641916,
       "componentType": 5126,
-      "count": 20537,
+      "count": 53493,
       "max": [
-        0.9999964237213135,
-        0.9999997615814209,
-        1.0
+        0.99999862909317017,
+        0.99994814395904541,
+        0.9999808669090271
       ],
       "min": [
-        -0.9999964237213135,
-        -0.999985933303833,
-        -1.0
+        -0.99988377094268799,
+        -0.99999535083770752,
+        -0.99996161460876465
       ],
       "type": "VEC3"
     },
     {
       "bufferView": 1,
       "componentType": 5126,
-      "count": 20537,
+      "count": 53493,
       "max": [
-        0.9993029832839966,
-        0.9982669949531555
+        0.99576401710510254,
+        1
       ],
       "min": [
-        0.0006970000104047358,
-        0.0006970000104047358
+        0,
+        5.0999999075429514e-05
       ],
       "type": "VEC2"
     },
     {
       "bufferView": 0,
       "componentType": 5125,
-      "count": 103578,
+      "count": 290448,
+      "max": [
+        53492
+      ],
+      "min": [
+        0
+      ],
       "type": "SCALAR"
     }
   ],
   "asset": {
     "extras": {
-      "author": "Maxngrumps (https://sketchfab.com/Pro786)",
-      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
-      "source": "https://sketchfab.com/3d-models/a-minecraft-movie-llama-d5cdc757960445b98846bed8114c4b89",
-      "title": "A Minecraft Movie - Llama"
+      "author": "Digital Archive of Natural History (DiNArDa) (https://sketchfab.com/disc3d)",
+      "license": "CC0-1.0 (http://creativecommons.org/publicdomain/zero/1.0/)",
+      "source": "https://sketchfab.com/3d-models/musca-domestica-157900941156422fbd9dcdfc38a3be19",
+      "title": "Musca domestica"
     },
-    "generator": "Sketchfab-16.64.0",
+    "generator": "Sketchfab-7.80.0",
     "version": "2.0"
   },
   "bufferViews": [
     {
       "buffer": 0,
-      "byteLength": 414312,
+      "byteLength": 1161792,
+      "byteOffset": 0,
       "name": "floatBufferViews",
       "target": 34963
     },
     {
       "buffer": 0,
-      "byteLength": 164296,
-      "byteOffset": 414312,
+      "byteLength": 427944,
+      "byteOffset": 1161792,
       "byteStride": 8,
       "name": "floatBufferViews",
       "target": 34962
     },
     {
       "buffer": 0,
-      "byteLength": 492888,
-      "byteOffset": 578608,
+      "byteLength": 1283832,
+      "byteOffset": 1589736,
       "byteStride": 12,
       "name": "floatBufferViews",
       "target": 34962
@@ -90,31 +97,53 @@
   ],
   "buffers": [
     {
-      "byteLength": 1071496,
+      "byteLength": 2873568,
       "uri": "scene.bin"
     }
   ],
+  "extensionsRequired": [
+    "KHR_materials_pbrSpecularGlossiness"
+  ],
+  "extensionsUsed": [
+    "KHR_materials_pbrSpecularGlossiness"
+  ],
   "images": [
     {
-      "url": "https://raw.githubusercontent.com/maLu70/PRITest/refs/heads/main/assets/material_0_baseColor.png"
+      "uri": "textures/Musca_domestica_2.1001_diffuse.png"
     }
   ],
   "materials": [
     {
       "doubleSided": true,
-      "name": "material_0",
-      "pbrMetallicRoughness": {
-        "baseColorTexture": {
-          "index": 0
-        },
-        "metallicFactor": 0.0,
-        "roughnessFactor": 0.6
-      }
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            0.69683689024390238,
+            0.69683689024390238,
+            0.69683689024390238,
+            1
+          ],
+          "diffuseTexture": {
+            "index": 0,
+            "texCoord": 0
+          },
+          "glossinessFactor": 0.047065548780487854,
+          "specularFactor": [
+            0.62366615853658536,
+            0.62366615853658536,
+            0.62366615853658536
+          ],
+          "specularGlossinessTexture": {
+            "index": 1,
+            "texCoord": 0
+          }
+        }
+      },
+      "name": "Musca_domestica_2.1001"
     }
   ],
   "meshes": [
     {
-      "name": "Object_0",
       "primitives": [
         {
           "attributes": {
@@ -134,38 +163,56 @@
       "children": [
         1
       ],
-      "matrix": [
-        1.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        2.220446049250313e-16,
-        -1.0,
-        0.0,
-        0.0,
-        1.0,
-        2.220446049250313e-16,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        1.0
-      ],
-      "name": "Sketchfab_model"
+      "name": "RootNode (gltf orientation matrix)",
+      "rotation": [
+        -0.70710678118654746,
+        -0,
+        -0,
+        0.70710678118654757
+      ]
     },
     {
       "children": [
         2
       ],
-      "name": "base.obj.cleaner.materialmerger.gles"
+      "matrix": [
+        0.99754166603088379,
+        0.010474151000380516,
+        0.069288231432437897,
+        0,
+        0.070075437426567078,
+        -0.14910221099853516,
+        -0.9863356351852417,
+        0,
+        0,
+        0.98876631259918213,
+        -0.14946965873241425,
+        0,
+        -0.074486039578914642,
+        1.5996347665786743,
+        0.60873943567276001,
+        1
+      ],
+      "name": "RootNode (model correction matrix)"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "Musca_domestica_2.obj.cleaner.materialmerger.gles"
     },
     {
       "mesh": 0,
-      "name": "Object_2"
+      "name": ""
     }
   ],
   "samplers": [
+    {
+      "magFilter": 9728,
+      "minFilter": 9986,
+      "wrapS": 10497,
+      "wrapT": 10497
+    },
     {
       "magFilter": 9729,
       "minFilter": 9987,
@@ -176,7 +223,7 @@
   "scene": 0,
   "scenes": [
     {
-      "name": "Sketchfab_Scene",
+      "name": "OSG_Scene",
       "nodes": [
         0
       ]
@@ -186,6 +233,11 @@
     {
       "sampler": 0,
       "source": 0
+    },
+    {
+      "sampler": 1,
+      "source": 0
     }
   ]
 }
+
